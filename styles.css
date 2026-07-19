@@ -11,9 +11,9 @@
     --secondary: #1a1a2e;
     --accent: #ffd700;
     --gold: #d4af37;
-    --white: #ffffff;
-    --off-white: #faf8f5;
-    --light-gray: #f5f0eb;
+    --white: #f7efe8;
+    --off-white: #f4ebdf;
+    --light-gray: #efe3d4;
     --text: #2d2d2d;
     --text-light: #6b6b6b;
     --text-muted: #999999;
@@ -46,7 +46,7 @@ html {
 body {
     font-family: var(--font-body);
     color: var(--text);
-    background: var(--white);
+    background: var(--off-white);
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -224,9 +224,17 @@ img { max-width: 100%; display: block; }
     gap: 10px;
 }
 
-.logo-crown {
-    font-size: 1.8rem;
-    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+.logo-crown,
+.crown-icon {
+    width: 34px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.12));
+}
+
+.crown-icon {
+    width: 24px;
 }
 
 .logo-text {
@@ -324,7 +332,9 @@ img { max-width: 100%; display: block; }
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #1a0a1a 0%, #2d1b2e 30%, #1a1a2e 70%, #0f0f1e 100%);
+    background:
+        linear-gradient(135deg, rgba(26, 10, 26, 0.94) 0%, rgba(45, 27, 46, 0.88) 35%, rgba(26, 26, 46, 0.90) 70%, rgba(15, 15, 30, 0.95) 100%),
+        url('Assets/heroBg.png') center/cover no-repeat;
     overflow: hidden;
     padding: 120px 24px 80px;
 }
@@ -406,7 +416,7 @@ img { max-width: 100%; display: block; }
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: rgba(255,255,255,0.1);
+    background: rgba(247, 239, 232, 0.12);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255,255,255,0.15);
     padding: 8px 20px;

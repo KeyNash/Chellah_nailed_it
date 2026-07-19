@@ -65,22 +65,22 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'Knotless Braids Style'
         },
         {
-            id: 11,
-            src: 'Assets/braids (2).jpeg',
-            category: 'braids',
-            title: 'Protective Braids'
-        },
-        {
             id: 12,
             src: 'Assets/braids (3).jpeg',
             category: 'braids',
             title: 'Box Braids Look'
         },
         {
-            id: 13,
-            src: 'Assets/braids (4).jpeg',
-            category: 'braids',
-            title: 'Styled Braids'
+            id: 14,
+            src: 'Assets/locs (1).jpeg',
+            category: 'locs',
+            title: 'Locs Style'
+        },
+        {
+            id: 15,
+            src: 'Assets/locs (2).jpeg',
+            category: 'locs',
+            title: 'Natural Locs Finish'
         }
     ];
 
